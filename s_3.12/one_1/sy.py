@@ -29,7 +29,7 @@ password=''.join(random.sample(a,8))
 print(password)
 '''
 
-
+'''
 import random
 import string
 from collections import Counter
@@ -39,7 +39,7 @@ charcount=dict(Counter(list))
 for char,count in charcount.items():
     print(char,count)
 
-
+'''
 
 
 
@@ -58,6 +58,21 @@ b,c=map(int,input().split())
 list=a[b:c:1]
 print(list)
 '''
+
+'''
+userDict={'admin':'123456','administrator':'12345678','root':'password'}
+#更新
+userDict['root']='newpassWord'
+print(userDict)
+#插入
+userDict['newuser']='qwer'
+print(userDict)
+#删除
+del_user=userDict.pop('admin')
+print(userDict)
+print(del_user)
+'''
+
 
 
 '''
@@ -103,6 +118,8 @@ c.insert(2,"fanyap")
 print(c)
 
 '''
+
+
 '''
 list={'ww','ee','rr','tt','ww','ee'}
 lit=set(list)
